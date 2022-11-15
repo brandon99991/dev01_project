@@ -118,7 +118,7 @@
 		<repository>
           <id>Releases</id>
          <!-- url>http://kis.synology.me:19090/nexus/content/repositories/releases/</url  -->
-         <url>http://192.168.35.101:17002/nexus/content/repositories/releases/</url>
+         <url>http://192.168.35.101:7300/nexus/content/repositories/releases/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -133,7 +133,7 @@
       <pluginRepository>
           <id>Releases</id>
          <!-- url>http://kis.synology.me:19090/nexus/content/repositories/releases/</url  -->
-         <url>http://192.168.35.101:17002/nexus/content/repositories/releases/</url>
+         <url>http://192.168.35.101:7300/nexus/content/repositories/releases/</url>
          <releases>
              <enabled>true</enabled>
          </releases>
@@ -148,14 +148,14 @@
     <id>dev-Releases</id>
     <name>dev Releases Repository</name>
     <!--  url>http://kis.synology.me:19090/nexus/content/repositories/dev-Releases/</url  -->
-    <url>http://192.168.35.101:17002/nexus/content/repositories/dev-Releases/</url>    
+    <url>http://192.168.35.101:7300/nexus/content/repositories/dev-Releases/</url>    
   </repository>
 
   <snapshotRepository>
     <id>dev-Snapshots</id>
     <name>dev Snapshots Repository</name>
     <!--  url>http://kis.synology.me:19090/nexus/content/repositories/dev-Snapshots/</url  -->
-    <url>http://192.168.35.101:17002/nexus/content/repositories/dev-Snapshots/</url>    
+    <url>http://192.168.35.101:7300/nexus/content/repositories/dev-Snapshots/</url>    
   </snapshotRepository>
 </distributionManagement>
 
