@@ -17,7 +17,8 @@ public interface BoardRepository {
 	List<Board> getList();
 	Board get(int boardSeq);
 	
-	void save(BoardParameter board);
+	//void save(BoardParameter board);
+	void save(Board board);
 	void update (BoardParameter board);
 	void delete(int boardSeq);
 }

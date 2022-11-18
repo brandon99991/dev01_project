@@ -6,3 +6,14 @@
    
    // Lombok 적용
    kr.co.songjava.mvc.domain.Board
+   
+   
+ 2. 서비스 호출
+  http://localhost:8080/board 
+  http://localhost:8080/board/1
+  
+  http://localhost:8080/board/save?title=abcd&contents=abcd1234
+  
+  
+ 3. swagger 호출 (SwaggerConfiguration)
+  http://localhost:8080/swagger-ui.html

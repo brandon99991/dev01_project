@@ -73,6 +73,7 @@ public class BoardController {
 	 * @param board
 	 */
 	//@GetMapping("/save")
+	/*
 	@PutMapping
 	@ApiOperation(value = "등록/수정 처리", notes = "신규 게시물 저장 및 기존 게시물 업데이트를 할 수 있습니다.")
 	@ApiImplicitParams({
@@ -80,18 +81,21 @@ public class BoardController {
 		@ApiImplicitParam(name = "title", value = "제목", example = "spring"),
 		@ApiImplicitParam(name = "contents", value = "내용", example = "spring 강좌")	,	
 	})
-	/*
-	public int save(BoardParameter parameter) {
-		boardService.save(parameter);
-		return parameter.getBoardSeq();
-		
-	}
 	*/
-	public BaseResponse<Integer> save(BoardParameter parameter) {
-		boardService.save(parameter);
-		return new BaseResponse<Integer>(parameter.getBoardSeq());
+
+	@GetMapping("/save")
+	public int save(Board board) {
+		return boardService.save(board);
 	}
 
+	
+	/*
+	public BaseResponse<Integer> save(Board board) {
+		//boardService.save(parameter);
+		boardService.save(board);
+		return new BaseResponse<Integer>(board.getBoardSeq());
+	}
+*/
 	
 	/**
 	 * 업데이트 처리.
