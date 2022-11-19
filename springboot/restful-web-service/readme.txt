@@ -12,11 +12,17 @@
            Auto activation triggers for java : <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
            Auto activation triggers for javadoc : @#  
    
+3. 이클립스 자동 줄바꿈
+    alt + shift ++ y 
 
-3. 
+4. Lombok이 사용된 클래스에서 이클립스의 outline 을 보면, 구조가 확인됨.
 
 
 
 99. 테스트 url
 http://localhost:8088/hello-world
-http://localhost:8088/hello-world-bean   
+http://localhost:8088/hello-world-bean
+http://localhost:8088/users   
+http://localhost:8088/users/1
+http://localhost:8088/users/2
+http://localhost:8088/users/3
