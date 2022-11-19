@@ -13,18 +13,28 @@
            Auto activation triggers for javadoc : @#  
    
 3. 이클립스 단축키
-   이클립스 자동 줄바꿈 : alt + shift ++ y 
+   자동 줄바꿈 : alt + shift ++ y 
    파일명 검색 : Ctrl + Shift + R
    특정 코드 포함한 파일 검색 : Ctrl + H
 
 4. Lombok이 사용된 클래스에서 이클립스의 outline 을 보면, 구조가 확인됨.
 
+5. Swagger
+	http://localhost:8088/v2/api-docs
+	http://localhost:8088/swagger-ui.html
 
+6. Actuator
+    http://localhost:8088/actuator
+
+7. HAL
+	http://localhost:8088
+	http://localhost:8088/actuator/metrics
+	http://localhost:8088/actuator/metrics/jvm.memory.max
 
 99. 테스트 url
-http://localhost:8088/hello-world
-http://localhost:8088/hello-world-bean
-http://localhost:8088/users   
-http://localhost:8088/users/1
-http://localhost:8088/users/2
-http://localhost:8088/users/3
+	http://localhost:8088/hello-world
+	http://localhost:8088/hello-world-bean
+	http://localhost:8088/users   
+	http://localhost:8088/users/1
+	http://localhost:8088/users/2
+	http://localhost:8088/users/3

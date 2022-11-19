@@ -13,9 +13,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @RestController
 public class UserController {
+	@Autowired
 	private UserDaoService service;
 	
 	public UserController(UserDaoService service) {
@@ -27,7 +34,9 @@ public class UserController {
 		return service.findAll();
 	}
 
-	// GET /users/1 or /users/10
+	
+/*	
+// GET /users/1 or /users/10 
 	@GetMapping("/users/{id}")
 	public User retrieveUser(@PathVariable int id) throws UserNotFoundException {
 		User user =service.findOne(id);
@@ -39,6 +48,27 @@ public class UserController {
 			
 		return user;
 	}
+*/	
+	
+    // GET /users/1 or /users/10 -> String
+    @GetMapping("/users/{id}")
+    public Resource<User> retrieveUser(@PathVariable int id) throws UserNotFoundException {
+        User user = service.findOne(id);
+
+        if (user == null) {
+            throw new UserNotFoundException(String.format("ID[%s] not found", id));
+        }
+
+        ////////////////////////////////////////////////
+        // HATEOAS
+        // 사용자 검색 결과에 전체 사용자 조회할 수 있는 링크를 포함시킴
+        ////////////////////////////////////////////////
+        Resource<User>  resource = new Resource<>(user);
+        ControllerLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+        resource.add(linkTo.withRel("all-users"));
+
+        return resource;
+    }	
 	
     @PostMapping("/users")
     public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
