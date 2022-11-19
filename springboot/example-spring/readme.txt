@@ -10,6 +10,11 @@
 	E03 Swagger 설치 + 게시판 API 문서화 : https://youtu.be/groXYLpRndI
 	E04 공통 Response class, enum 사용하기 : https://youtu.be/kSII5YLTX2o
 
+
+# Lombok 설치
+   eclipse.ini or SpringToolSuite4.ini 파일에서 아래 라인 추가 후 이클립스 재기동
+   -javaagent:lombok.jar
+
 # 게시판 테이블 DDL
 	CREATE TABLE T_BOARD ( BOARD_SEQ int(11) NOT NULL AUTO_INCREMENT, TITLE varchar(100) NOT NULL, CONTENTS text NOT NULL, REG_DATE datetime NOT NULL, PRIMARY KEY (BOARD_SEQ) ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='게시판';
 
@@ -26,3 +31,10 @@
   4) CTRL + Page UP or Page Down
      다음 탭, 이전 탭 	
 	
+# 서비스 호출
+  http://localhost:8080/board 
+  http://localhost:8080/board/1
+  http://localhost:8080/board/save?title=abcd&contents=abcd1234
+  
+ # swagger 호출 (SwaggerConfiguration)
+  http://localhost:8080/swagger-ui.html	
