@@ -12,8 +12,10 @@
            Auto activation triggers for java : <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
            Auto activation triggers for javadoc : @#  
    
-3. 이클립스 자동 줄바꿈
-    alt + shift ++ y 
+3. 이클립스 단축키
+   이클립스 자동 줄바꿈 : alt + shift ++ y 
+   파일명 검색 : Ctrl + Shift + R
+   특정 코드 포함한 파일 검색 : Ctrl + H
 
 4. Lombok이 사용된 클래스에서 이클립스의 outline 을 보면, 구조가 확인됨.
 
