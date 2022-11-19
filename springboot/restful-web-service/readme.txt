@@ -31,6 +31,20 @@
 	http://localhost:8088/actuator/metrics
 	http://localhost:8088/actuator/metrics/jvm.memory.max
 
+8. SpringSecurity
+   http://localhost:8088/login
+
+user / f3b40975-af3c-4c8d-83cb-03185696a949
+Using generated security password: f3b40975-af3c-4c8d-83cb-03185696a949
+
+or application.yml에 추가
+spring:
+  security:
+    user:
+      name: oing
+      password: daddy
+
+
 99. 테스트 url
 	http://localhost:8088/hello-world
 	http://localhost:8088/hello-world-bean
