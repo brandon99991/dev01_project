@@ -21,7 +21,13 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<!--
+		// inflearn 강의 버젼 
+		<spring-cloud.version>2020.0.0</spring-cloud.version>
+		// 내 테스트 버젼
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
+		-->
+		<spring-cloud.version>2020.0.0</spring-cloud.version>		
 	</properties>
 	<dependencies>
 		<dependency>
