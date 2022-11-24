@@ -5,8 +5,9 @@ metadata:
   labels:
     run: restful-web-service
   name: restful-web-service
+  namespace: devtest  
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       run: restful-web-service
