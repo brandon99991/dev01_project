@@ -20,19 +20,19 @@
 4. Lombok이 사용된 클래스에서 이클립스의 outline 을 보면, 구조가 확인됨.
 
 5. Swagger
-	http://localhost:8088/v2/api-docs
-	http://localhost:8088/swagger-ui.html
+	http://localhost:9001/v2/api-docs
+	http://localhost:9001/swagger-ui.html
 
 6. Actuator
-    http://localhost:8088/actuator
+    http://localhost:9001/actuator
 
 7. HAL
-	http://localhost:8088
-	http://localhost:8088/actuator/metrics
-	http://localhost:8088/actuator/metrics/jvm.memory.max
+	http://localhost:9001
+	http://localhost:9001/actuator/metrics
+	http://localhost:9001/actuator/metrics/jvm.memory.max
 
 8. SpringSecurity
-   http://localhost:8088/login
+   http://localhost:9001/login
 
 user / f3b40975-af3c-4c8d-83cb-03185696a949
 Using generated security password: f3b40975-af3c-4c8d-83cb-03185696a949
@@ -46,9 +46,9 @@ spring:
 
 
 99. 테스트 url
-	http://localhost:8088/hello-world
-	http://localhost:8088/hello-world-bean
-	http://localhost:8088/users   
-	http://localhost:8088/users/1
-	http://localhost:8088/users/2
-	http://localhost:8088/users/3
+	http://localhost:9001/hello-world
+	http://localhost:9001/hello-world-bean
+	http://localhost:9001/users   
+	http://localhost:9001/users/1
+	http://localhost:9001/users/2
+	http://localhost:9001/users/3
