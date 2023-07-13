@@ -52,7 +52,7 @@ spring:
       password: daddy
 
 98. Jenkins 빌드 실패시
-    원격 Tomcat에 Deploy시에 WAR타입으로 배포해야 함. (pom.xml확인)
+    원격 Tomcat에 Deploy시에는 WAR타입으로 배포해야 함. (pom.xml확인)
 
 99. 테스트 url
 	http://localhost:9001/hello-world
