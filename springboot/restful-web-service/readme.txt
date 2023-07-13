@@ -1,15 +1,15 @@
 -------------------------------------------------------
 ■ restful-web-service
 ● Project : C:\dev.workspace\STS4\brandon99991.dev01_project.springboot
-● Workspace : /home/user01/dev.workspace/vscode/docker/restful-web-service_docker
 ● GitHub : https://github.com/brandon99991/dev01_project.git   (springboot/restful-web-service)
 ● Jenkins : 1) restful-web-service 
                - WSL > Tomcat (/home/user01/sw.home/apache-tomcat-9.0.65)
                - user01계정  (home/user01)
                - Deploy Path : /home/vm01/webhome
                - pom.xml에서 Type을 WAR로 설정           
-            2) restful-web-service_docker (WSL > Docker)
+            2) restful-web-service_docker
                - WSL > Docker
+               - Docker Workspace : /home/user01/dev.workspace/vscode/docker/restful-web-service_docker
                - pom.xml에서 Type을 JAR로 설정           
 -------------------------------------------------------
 
