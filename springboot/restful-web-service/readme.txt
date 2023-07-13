@@ -1,3 +1,10 @@
+-------------------------------------------------------
+# Project : C:\dev.workspace\STS4\brandon99991.dev01_project.springboot
+# Workspace : /home/user01/dev.workspace/vscode/docker/restful-web-service_docker
+# Jenkins : 1) restful-web-service  (WSL > Tomcat9)
+            2) restful-web-service_docker (WSL > Docker)
+-------------------------------------------------------
+
 1. application.properties를 yaml파일로 변경하기
    -> application.properties 파일에서 Refactor로 변경  (application.yml)
    
