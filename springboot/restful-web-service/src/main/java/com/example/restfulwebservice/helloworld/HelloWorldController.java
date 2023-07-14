@@ -18,7 +18,7 @@ public class HelloWorldController {
 	// GET
 	// /hello-world (endpoint)
 	// @RequestMapping(method=RequestMethod.GET, path="/hello-world")  // old
-	@GetMapping(path = "/restful-web-service/hello-world")
+	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
 		return "Hello World";                   // string으로 응답
 	}
