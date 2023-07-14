@@ -19,14 +19,14 @@
                - Docker Workspace : /home/user01/dev.workspace/vscode/docker/restful-web-service_docker
                - pom.xml에서 Type을 JAR로 설정
 ● 서비스URL 01 :      
-		http://192.168.35.101:17000/hello-world
+		http://192.168.35.101:17000/restful-web-service/hello-world
 		http://192.168.35.101:17000/hello-world-bean
 		http://192.168.35.101:17000/users   
 		http://192.168.35.101:17000/users/1
 		http://192.168.35.101:17000/users/2
 		http://192.168.35.101:17000/users/3
-		http://192.168.35.101:17000/swagger-ui.html
-		http://192.168.35.101:17000/v2/api-docs
+		http://192.168.35.101:17000/restful-web-service/swagger-ui.html
+		http://192.168.35.101:17000/restful-web-service/v2/api-docs
 		http://192.168.35.101:17000/actuator
 		http://192.168.35.101:17000/actuator/metrics
 		http://192.168.35.101:17000/actuator/metrics/jvm.memory.max
