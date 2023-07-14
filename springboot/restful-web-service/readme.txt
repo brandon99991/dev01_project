@@ -15,7 +15,34 @@
             3) restful-web-service_docker
                - WSL > Docker
                - Docker Workspace : /home/user01/dev.workspace/vscode/docker/restful-web-service_docker
-               - pom.xml에서 Type을 JAR로 설정           
+               - pom.xml에서 Type을 JAR로 설정
+● 서비스URL 01 :      
+		http://192.168.35.101:17000/hello-world
+		http://192.168.35.101:17000/hello-world-bean
+		http://192.168.35.101:17000/users   
+		http://192.168.35.101:17000/users/1
+		http://192.168.35.101:17000/users/2
+		http://192.168.35.101:17000/users/3
+		http://192.168.35.101:17000/swagger-ui.html
+		http://192.168.35.101:17000/v2/api-docs
+		http://192.168.35.101:17000/actuator
+		http://192.168.35.101:17000/actuator/metrics
+		http://192.168.35.101:17000/actuator/metrics/jvm.memory.max
+		http://192.168.35.101:17000/login         
+		
+● 서비스URL 02 :
+		http://localhost:9001/hello-world
+		http://localhost:9001/hello-world-bean
+		http://localhost:9001/users   
+		http://localhost:9001/users/1
+		http://localhost:9001/users/2
+		http://localhost:9001/users/3
+		http://localhost:9001/swagger-ui.html
+		http://localhost:9001/v2/api-docs
+		http://localhost:9001/actuator
+		http://localhost:9001/actuator/metrics
+		http://localhost:9001/actuator/metrics/jvm.memory.max
+		http://localhost:9001/login
 -------------------------------------------------------
 
 1. application.properties를 yaml파일로 변경하기
