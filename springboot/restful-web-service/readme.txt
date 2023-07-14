@@ -1,7 +1,9 @@
 -------------------------------------------------------
 ■ restful-web-service
 ● Project : C:\dev.workspace\STS4\brandon99991.dev01_project.springboot
+
 ● GitHub : https://github.com/brandon99991/dev01_project.git   (springboot/restful-web-service)
+
 ● Jenkins : 1) restful-web-service (deploy방식으로 배포)
                - WSL > Tomcat (/home/user01/sw.home/apache-tomcat-9.0.65)
                - user01계정  (home/user01)
