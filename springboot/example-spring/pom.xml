@@ -23,6 +23,21 @@
 		<swagger.version>2.9.2</swagger.version>
 	</properties>
 	
+	<!--
+        1. Repository Type
+          - proxy : 외부 레퍼지토리와 연결해서 레퍼지토리 버젼관리  (외부 연결용)
+          - hosted : 내부 레퍼지토리 (내부 개발용으로 사용)
+          - virtual : 서로 다른 타입의 Repository의 연결
+          - group : 위 3개 타입 복수개를 하나로 묶어줌
+
+		2. Repository
+		  - Snapshots : 빌드 등 수시로 릴리즈 되는 바이너리를 배포하는 장소
+		  - Releases : 정식 릴리즈를 통해서 배포되는 바이너리를 배포하는 장소
+		  - 3rd party : 벤더에서 제공하는 바이너리 저장 장소
+		  - Proxy Repository : Local Cache용
+		  - Virtual Repository :
+	-->	
+	
 	<repositories>
 	<!--
 	  // 메이븐 설정파일(settings.xml)에 아래 내용 추가할 것 (id를 동일하게 맞출것)	 
