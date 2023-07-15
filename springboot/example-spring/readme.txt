@@ -37,4 +37,29 @@
   http://localhost:8080/board/save?title=abcd&contents=abcd1234
   
  # swagger 호출 (SwaggerConfiguration)
-  http://localhost:8080/swagger-ui.html	
+  http://localhost:8080/swagger-ui.html
+  
+    
+ # 외장 톰캣으로 구동하기 위한 방법
+  1) ExampleSpringApplication 클래스에서 아래의 내용 추가 
+     // 외장 톰캣으로 구동하기 위한 import 추가
+		import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+		import org.springframework.boot.builder.SpringApplicationBuilder;
+     // SpringBootServletInitializer 를 상속받는다.
+	    ExampleSpringApplication extends SpringBootServletInitializer
+     // configure함수를 override한다
+		@Override
+		protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+			return builder.sources(ExampleSpringApplication.class);
+		}	
+		    
+  2) pom.xml에서 아래 내용 추가 
+        <packaging>war</packaging>	
+ 		... 
+  		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>	
+	    
+  	
