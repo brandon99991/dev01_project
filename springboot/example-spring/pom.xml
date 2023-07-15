@@ -128,14 +128,23 @@
 			<profile>
 				<id>dev</id>
 				<properties>
-					<buildVersion>0.0.3-SNAPSHOT</buildVersion>
+					<!--  buildVersion>0.0.1-SNAPSHOT</buildVersion    -->   
+					<buildVersion>0.0.3-dev</buildVersion>					
 				</properties>
 			</profile>
 			<profile>
 				<id>test</id>
+				<properties>
+					<!--  buildVersion>0.0.1-SNAPSHOT</buildVersion    -->   
+					<buildVersion>0.0.3-test</buildVersion>					
+				</properties>
 			</profile>
 			<profile>
 				<id>local</id>
+				<properties>
+					<!--  buildVersion>0.0.1-SNAPSHOT</buildVersion    -->   
+					<buildVersion>0.0.3-local</buildVersion>					
+				</properties>
 			</profile>
 			<profile>
 				<id>prod</id>
