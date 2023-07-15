@@ -23,11 +23,18 @@
 		<swagger.version>2.9.2</swagger.version>
 	</properties>
 	
-<!-- 	
 	<repositories>
+	<!--
+	  // 메이븐 설정파일(settings.xml)에 아래 내용 추가할 것 (id를 동일하게 맞출것)	 
+	  <server>
+	    <id>central</id>
+	    <username>admin</username>
+	    <password>admin123</password>
+	  </server>	
+	 -->
 			<repository>
 				<id>central</id>
-				<url>http://192.168.35.101:17300/nexus/content/groups/public/</url>
+				<url>http://192.168.35.101:17300/nexus/content/repositories/central/</url>
 				<releases>
 					<enabled>true</enabled>
 				</releases>
@@ -36,7 +43,6 @@
 				</snapshots>
 			</repository>	
 	</repositories>
- -->	
 	
 	<dependencies>
 		<dependency>
