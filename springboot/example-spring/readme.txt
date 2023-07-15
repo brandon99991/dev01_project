@@ -40,7 +40,7 @@
   http://localhost:8080/swagger-ui.html
   
     
- # 외장 톰캣으로 구동하기 위한 방법
+ # 외장 톰캣으로 기동하기 위한 방법 (* 참고 : 아래와 같이 설정해도 STS에서 스프링부트로 기동됨.)
   1) ExampleSpringApplication 클래스에서 아래의 내용 추가 
      // 외장 톰캣으로 구동하기 위한 import 추가
 		import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
