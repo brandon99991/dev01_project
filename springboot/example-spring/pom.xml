@@ -10,7 +10,10 @@
 	</parent>
 	<groupId>kr.co.songjava</groupId>
 	<artifactId>example-spring</artifactId>
+<!-- 
 	<version>0.0.1-SNAPSHOT</version>
+ -->
+	<version>${buildVersion}</version> 	
 	<name>example-spring</name>
 	<description>inflearn project for Spring Boot</description>
     <packaging>war</packaging>	
@@ -115,5 +118,31 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- 
+		Maven Build
+		 - Goals : clean compile install (or package)
+		 - Profiles : dev or test or local or prod		 
+	 -->
+	<profiles>
+			<profile>
+				<id>dev</id>
+				<properties>
+					<buildVersion>0.0.2-SNAPSHOT</buildVersion>
+				</properties>
+			</profile>
+			<profile>
+				<id>test</id>
+			</profile>
+			<profile>
+				<id>local</id>
+			</profile>
+			<profile>
+				<id>prod</id>
+				<properties>
+					<buildVersion>0.0.2</buildVersion>
+				</properties>
+			</profile>	
+	</profiles>
 
 </project>
