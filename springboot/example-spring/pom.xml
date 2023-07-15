@@ -36,6 +36,15 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		
+		<!-- 외장 톰캣 사용을 위해 -->
+		<!-- marked the embedded servlet container as provided -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>		
+		
 <!-- 제거		
 		<dependency>
 			<groupId>mysql</groupId>
