@@ -159,7 +159,23 @@
 	<!-- 
 		Maven Build
 		 - Goals : clean compile install (or package or deploy)
-		 - Profiles : dev or test or local or prod		 
+		 - Profiles : dev or test or local or prod		
+		 
+		 참고 :
+		   - compile : 컴파일 수행
+		   - test : 컴파일 수행 후 테스트 클래스 수행
+		   - package :  컴파일을 수행하고 컴파일한 소스를 packaging 양식(war or jar)에 맞춰 프로젝트 내 지정한 경로(eg.target) 디렉토리에 생성
+		   - install : package 한것에 추가적으로 로컬 repository에 배포한다. 
+		   - deploy : install 한것에 추가적으로 원격 repository(nexus)에 배포한다.
+		   - clean : maven build 시 생성된 모든 것들을 삭제한다.
+		   
+		  옵션 :
+		   - -U : 원격 리포지토리에서 누락 된 릴리스 및 업데이트 된 스냅 샷을 검사합니다.
+		   - -X : 실행 디버그 출력 생성
+		   - -T : 스레드 수
+		   - -s : 사용자 설정 파일의 대체 경로
+		   - -P : 활성화 할 쉼표로 구분된 프로파일 목록
+		    
 	 -->
 	<profiles>
 			<profile>
