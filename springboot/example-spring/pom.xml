@@ -59,6 +59,23 @@
 			</repository>	
 	</repositories>
 	
+	
+	<!-- https://recordsoflife.tistory.com/1158   -->
+	<!-- 배포 위치 (deploy goal을 실행했을 시 배포되는 위치를 기술함)  -->
+	<distributionManagement>
+	  <repository>
+	    <id>dev-Releases</id>
+	    <name>dev Releases Repository</name>
+	    <url>http://192.168.35.101:17300/nexus/content/repositories/dev-Releases/</url>    
+	  </repository>
+	
+	  <snapshotRepository>
+	    <id>dev-Snapshots</id>
+	    <name>dev Snapshots Repository</name>
+	    <url>http://192.168.35.101:17300/nexus/content/repositories/dev-Snapshots/</url>    
+	  </snapshotRepository>
+	</distributionManagement>	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
